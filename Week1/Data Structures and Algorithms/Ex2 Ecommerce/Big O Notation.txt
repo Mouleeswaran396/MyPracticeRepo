@@ -1,0 +1,35 @@
+Big O Notation is a way to describe how efficient an algorithm is, especially when the amount of input data gets large. It tells us how the time or memory used by an algorithm grows as the input size increases—without worrying about the specific hardware or actual run time.
+
+In short, Big O helps us compare algorithms by showing their worst-case performance and how well they scale.
+
+Some common examples:
+O(1): Constant time – The algorithm runs in the same amount of time, no matter how much data you have.
+
+O(n): Linear time – The time grows directly with the size of the input.
+
+Using Big O, we can pick the right algorithm for the job—especially important when dealing with large datasets or performance-critical systems.
+
+Search Operation Time Complexities
+When analyzing search algorithms, we usually look at three scenarios:
+
+🔹 Best Case
+This is the ideal situation where the target is found immediately.
+
+Linear Search: If the element is at the very beginning → O(1)
+
+Binary Search: If the element is right in the middle → O(1)
+
+🔹 Average Case
+This is what typically happens during a search.
+
+Linear Search: The element might be somewhere in the middle → O(n)
+(Technically O(n/2), but we drop constants in Big O.)
+
+Binary Search: Each step cuts the list in half → O(log n)
+
+🔹 Worst Case
+This is the slowest the algorithm can be—usually when the element is at the end or not there at all.
+
+Linear Search: You go through the whole list → O(n)
+
+Binary Search: Keeps halving until the range is empty → O(log n)
